@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Quality of Service (QoS) - Manajemen Bandwidth</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #1e3a8a;
+            margin-top: 0;
+        }
+        iframe {
+            width: 100%;
+            max-width: 560px;
+            height: auto;
+            aspect-ratio: 16 / 9;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+        .video-caption {
+            text-align: center;
+            margin-top: 8px;
+            font-size: 14px;
+            color: #555;
+        }
+        hr {
+            margin: 20px 0;
+            border: none;
+            border-top: 1px solid #ddd;
+        }
+        .duration {
+            background: #e6f0ff;
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #004080;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        footer {
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>Quality of Service (QoS) dalam Jaringan Komputer</h1>
+    <p>Materi: pengelolaan lalu lintas data, prioritas aplikasi real-time, parameter QoS, dan implementasi Simple Queue di MikroTik.</p>
+</div>
+
+<!-- Video YouTube (iframe dari file) -->
+<div class="card">
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/Gq3p37UTneo?si=X209XXFWSLiouzkO" 
+        title="YouTube video player - Quality of Service QoS" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+    </iframe>
+    <div class="video-caption">Video: Penjelasan Quality of Service (QoS)</div>
+</div>
+
+<!-- Penjelasan dari file DOCX -->
+<div class="card">
+    <h2>Penjelasan Quality of Service (QoS)</h2>
+    <p>Video ini menjelaskan konsep <strong>Quality of Service (QoS)</strong> dalam jaringan komputer, yang bertujuan untuk mengelola lalu lintas data agar layanan penting seperti video conference, voice call, dan game online mendapatkan prioritas lebih tinggi dibandingkan transfer file biasa. QoS diukur melalui empat parameter utama: <strong>reliability, delay, jitter, dan bandwidth</strong>. Selain itu, video juga membahas teknik-teknik manajemen bandwidth seperti <strong>traffic shaping, rate limiting, dan bandwidth allocation</strong>, serta memberikan contoh praktis penerapan QoS menggunakan fitur <strong>Simple Queue pada MikroTik</strong> untuk membatasi kecepatan akses berdasarkan alamat IP.</p>
+
+    <hr>
+
+    <h3>Rincian berdasarkan durasi video:</h3>
+
+    <div>
+        <span class="duration">00:00 - 03:00</span>
+        <p><strong>Definisi dan parameter QoS:</strong> Bagian awal video menjelaskan definisi QoS sebagai kemampuan jaringan menyediakan layanan berkualitas dengan mengelola lalu lintas data. Fokus utamanya adalah memberi prioritas pada aplikasi real-time seperti video, audio, dan game online karena sensitif terhadap delay dan kehilangan paket. Empat parameter kunci QoS (reliability, delay, jitter, dan bandwidth) diperkenalkan sebagai dasar pengukuran kualitas layanan jaringan.</p>
+    </div>
+
+    <div>
+        <span class="duration">05:10 - 06:30</span>
+        <p><strong>Aspek praktis QoS dan Simple Queue MikroTik:</strong> Video beralih ke aspek praktis QoS dengan menjelaskan metode manajemen bandwidth, khususnya <strong>Simple Queue</strong> pada MikroTik. Demonstrasi singkat menunjukkan cara membuat aturan pembatasan bandwidth berdasarkan alamat IP, yang membantu mencegah satu pengguna mendominasi seluruh kapasitas jaringan (bandwidth hogging) dan memastikan distribusi akses yang adil.</p>
+    </div>
+
+    <hr>
+
+    <h3>Kesimpulan dan Poin Penting</h3>
+    <ul>
+        <li>QoS memprioritaskan aplikasi sensitif delay (VoIP, video conference, game online).</li>
+        <li>Empat parameter utama: reliability, delay, jitter, bandwidth.</li>
+        <li>Teknik manajemen bandwidth: traffic shaping, rate limiting, bandwidth allocation.</li>
+        <li>Simple Queue di MikroTik dapat membatasi kecepatan per pengguna berdasarkan IP.</li>
+    </ul>
+</div>
+
+<footer>
+    Sumber: Materi jaringan komputer & video QoS.
+</footer>
+
+</body>
+</html>
